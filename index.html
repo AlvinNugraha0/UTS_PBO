@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ujian Tengah Semester | Pemrograman Berorientasi Object 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Membaca nilai uang (rupiah) dalam kelipatan 25 & menghitung berat badan yang ideal</h1>
+        <table>
+            <tr>
+                <td>Nama : </td>
+                <td>Alviana Nugraha</td>
+            </tr>
+            <tr>
+                <td>Prodi : </td>
+                <td>Teknik Informatika</td>
+            </tr>
+            <tr>
+                <td>NIM : </td>
+                <td>0402221012</td>
+            </tr>
+        </table>
+    <p>Pilih menu di bawah untuk memilih Program :</p>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'nilaiUang')" id="defaultOpen">membaca Nilai Uang (Rupiah)</button>
+        <button class="tablinks" onclick="openCity(event, 'beratBadan')">Hitung Berat Badan Ideal</button>
+    </div>
+
+    <div id="nilaiUang" class="tabcontent">
+        <h2>membaca nilai uang (rupiah) dalam kelipatan 25</h2>
+
+            <form class="inputan_persegi">
+                <label for="nilai_uang">Masukan Nilai Uang :</label>
+                <input type="number" id="nilai_uang" name="nilai_uang" placeholder="Masukan Nilai dalam Rp..">
+                
+                <input class="hitung" type="button" value="Hitung" onclick="hitungUang()">
+                <input class="reset" type="button" value="Reset" onclick="resetForm()">
+
+                <label for="hasil">Hasil:</label><br>
+                <textarea id="hasil" name="hasil" style="height:200px" placeholder="hasil.." readonly></textarea>
+            </form>
+
+    </div>
+
+    <div id="beratBadan" class="tabcontent">
+        
+        <h2>menghitung berat badan yang ideal berdasarkan dengan tinggi badan seseorang</h2>
+
+        <form>
+            <label for="tinggiBadan">Masukan tinggi badan Anda dalam cm :</label>
+            <input type="number" id="tinggiBadan" name="tinggiBadan" placeholder="masukan tinggi badan(cm)...">
+
+            <input class="hitung" type="button" value="Hitung" onclick="hitungBerat()">
+            <input class="reset" type="button" value="Reset" onclick="resetForm()">
+
+            <label for="hasil2">Jadi berat badan ideal untuk Anda adalah :</label>
+            <input type="text" id="hasil2" name="hasil2" placeholder="berat ideal adalah..." readonly>
+        </form>
+
+    </div>
+
+
+      
+    <script src="script.js"></script>
+</body>
+</html>
